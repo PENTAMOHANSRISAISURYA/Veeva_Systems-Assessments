@@ -10,7 +10,7 @@ public class Demo10 {
         studentMap.put(103, "Hari");
 
         for (Map.Entry<Integer, String> entry : studentMap.entrySet()) {
-            System.out.println(entry.getKey() + " → " + entry.getValue());
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
     }
 }
@@ -18,4 +18,5 @@ public class Demo10 {
 
 
 // Since it is mentioned to store in the insertion order , I used the LinkedHashmap.
+
 
