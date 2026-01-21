@@ -2,7 +2,7 @@
 interface Calculator {
     int calculate(int a, int b);
 }
-public class Main {
+public class Demo12 {
     public static void main(String[] args) {
 
         int x =5;
@@ -13,3 +13,4 @@ public class Main {
         System.out.println("Multiplication: " + multiply.calculate(x, y)); 
     }
 }
+
