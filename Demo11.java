@@ -1,22 +1,24 @@
-public class Demo11 {
+class InvalidPasswordException extends Exception {
+}
+
+class Demo11{
+
+    void validatePassword(String password) throws InvalidPasswordException {
+        if (password.length() < 8) {
+            throw new InvalidPasswordException();
+        }
+    }
+
     public static void main(String[] args) {
 
+        String password = "abc123";  
+	PasswordValidator p = new PasswordValidator();
+
         try {
-            int[] arr = {10, 20, 30};
-            try {
-                int result = arr[1] / 0; 
-                System.out.println("Result: " + result);
-            } catch (ArithmeticException e) {
-                System.out.println("Arithmetic Exception");
-            }
-            System.out.println(arr[5]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBoundsException");
+            p.validatePassword(password);
+        } catch (InvalidPasswordException e) {
+            System.out.println("Invalid Password.");
         }
     }
 }
-
-
-// First the inner try is executed and handles the "Arithemetic Exception"
-// And then the "ArrayOutofBound"
 
