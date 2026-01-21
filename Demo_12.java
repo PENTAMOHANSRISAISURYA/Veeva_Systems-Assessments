@@ -1,7 +1,7 @@
 class InvalidPasswordException extends Exception {
 }
 
-class Demo11{
+class Demo_12{
     void validatePassword(String password) throws InvalidPasswordException {
         if (password.length() < 8) {
             throw new InvalidPasswordException();
@@ -17,5 +17,6 @@ class Demo11{
         }
     }
 }
+
 
 
