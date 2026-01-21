@@ -1,7 +1,7 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Demo10 {
+public class Demo_10 {
     public static void main(String[] args) {
         Map<Integer, String> studentMap = new LinkedHashMap<>();
 
@@ -18,5 +18,6 @@ public class Demo10 {
 
 
 // Since it is mentioned to store in the insertion order , I used the LinkedHashmap.
+
 
 
