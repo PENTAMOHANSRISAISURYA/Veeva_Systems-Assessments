@@ -14,7 +14,7 @@ class Product {
     }
 }
 
-public class Demo15 {
+public class Demo_16{
     public static void main(String[] args) {
 
         Map<Integer, Product> productMap = new HashMap<>();
@@ -29,3 +29,4 @@ public class Demo15 {
         }
     }
 }
+
